@@ -8,13 +8,13 @@
 
 <title>
   
-    归档: 2017/2
+    分类: 数学基础
   
 </title>
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="BackStroke">
-<meta property="og:url" content="https://caryang.github.io/archives/2017/02/index.html">
+<meta property="og:url" content="https://caryang.github.io/categories/数学基础/index.html">
 <meta property="og:site_name" content="BackStroke">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BackStroke">
@@ -143,56 +143,75 @@
       
         <div style="max-width: 1000px">
       
-          
+          <h1>数学基础</h1>
+
 
   
   
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <h1><a href="/archives/2017" class="archive-year">2017</a></h1>
-        </div>
-        <div class="post-list">
-    
+    <div class="post-list">
   
 
     <div class="post-list-item article">
       <h3 class="article-header">
-        <a href="/2017/02/23/hello-world/" >
-  Hello World
+        <a href="/2017/03/01/皮尔逊相关系数/" >
+  皮尔逊相关系数
 </a>
 
       </h3>
       
 
       <div class="article-info">
-        <a href="/2017/02/23/hello-world/"><span class="article-date">
-  2017-02-23
+        <a href="/2017/03/01/皮尔逊相关系数/"><span class="article-date">
+  2017-03-01
 </span>
 </a>
         
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/数学基础/">数学基础</a></li></ul>
+	</span>
+
 
         
 
       </div>
       <div class="article-entry">
         
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+          <p>要理解Pearson相关系数，首先要理解协方差（Covariance）。</p>
+<h2 id="协方差"><a href="#协方差" class="headerlink" title="协方差"></a>协方差</h2><font color="#A60000">协方差是一个反映两个随机变量相关程度的指标，</font>
+
+<p>如果一个变量跟随着另一个变量同时变大或者变小，那么这两个变量的协方差就是正值，反之相反，公式如下：</p>
+<p><img src="http://olvdy91ke.bkt.clouddn.com/image/formula/Covariance.png" alt="协方差公式">  </p>
+<p>另外一种计算协方差的公式就是利用随便变量X和Y的期望，即：</p>
+<p><img src="http://olvdy91ke.bkt.clouddn.com/image/formula/Covariance2.jpg" alt="协方差公式">  </p>
+<p>从直观上来看，协方差表示的是两个变量总体误差的期望。</p>
+<p>如果两个变量的变化趋势一致，也就是说如果其中一个大于自身的期望值时另外一个也大于自身的期望值，那么两个变量之间的协方差就是正值；</p>
+<p>如果两个变量的变化趋势相反，即其中一个变量大于自身的期望值时另外一个却小于自身的期望值，那么两个变量之间的协方差就是负值。</p>
+<p>如果X与Y是统计独立的，那么二者之间的协方差就是0，因为两个独立的随机变量满足E[XY]=E[X]E[Y]。</p>
+<p>但是，反过来并不成立。即如果X与Y的协方差为0，二者并不一定是统计独立的。</p>
+<p>协方差为0的两个随机变量称为是不相关的。</p>
+<h2 id="皮尔逊相关系数"><a href="#皮尔逊相关系数" class="headerlink" title="皮尔逊相关系数"></a>皮尔逊相关系数</h2><p>下面回归正题，<font color="#A60000">皮尔森相关系数，也叫做简单相关系数。是用来反映两个变量线性相关程度的统计量，</font> 公式如下：</p>
+<p><img src="http://olvdy91ke.bkt.clouddn.com/image/formula/Pearson%20correlation%20coefficient.png" alt="皮尔逊相关系数公式"> </p>
+<p>虽然协方差能反映两个随机变量的相关程度（协方差大于0的时候表示两者正相关，小于0的时候表示两者负相关），</p>
+<p>但是协方差值的大小并不能很好地度量两个随机变量的关联程度。为此引入皮尔逊相关系数，一般用r表示，r的取值在-1与+1之间，</p>
+<p>若r&gt;0，表明两个变量是正相关，即一个变量的值越大，另一个变量的值也会越大；</p>
+<p>若r&lt;0，表明两个变量是负相关，即一个变量的值越大另一个变量的值反而会越小。</p>
+<p>r的绝对值越大表明相关性越强，要注意的是这里并不存在因果关系。若r=0，表明两个变量间不是线性相关，但有可能是其他方式的相关（比如曲线方式）.</p>
+<p>下面来看皮尔逊系数的另外一种计算公式：</p>
+<p><img src="http://olvdy91ke.bkt.clouddn.com/image/formula/Pearson%20correlation%20coefficient2.png" alt="皮尔逊相关系数公式">   </p>
+<p>可以看做将两组数据首先做Z分数处理之后, 然后两组数据的乘积和除以样本数</p>
+<p>Z分数一般代表正态分布中, 数据偏离中心点的距离.等于变量减掉平均数再除以标准差.</p>
+<p>标准差则等于变量减掉平均数的平方和,再除以样本数,最后再开方.</p>
+<h2 id="皮尔逊相关的约束条件"><a href="#皮尔逊相关的约束条件" class="headerlink" title="皮尔逊相关的约束条件"></a>皮尔逊相关的约束条件</h2><p>1 两个变量间有线性关系</p>
+<p>2 变量是连续变量</p>
+<p>3 变量均符合正态分布,且二元分布也符合正态分布</p>
+<p>4 两变量独立</p>
 
         
       </div>
     </div>
 
+  
+    </div>
   
 
 

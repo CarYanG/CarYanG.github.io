@@ -8,16 +8,32 @@
 
 <title>
   
-    归档: 2017/2
+    典型相关分析
   
 </title>
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="BackStroke">
-<meta property="og:url" content="https://caryang.github.io/archives/2017/02/index.html">
+<meta name="description" content="#问题由来
+典型相关分析，又称之为典型关联分析，英文叫做Canonical Correlation Analysis（CCA）。
+假设有两組变量时，一组为p个变量，另一组为q个变量，欲研究这两组变量之间的相关性。
+1 若这两组分别只有一个变量时，则其相关称为简单(线性)相关(又称做皮尔森相关，Pearson Correlation)。
+2  若其中一组只有一个变量，另一组有很多变量，则此两组的相关">
+<meta property="og:type" content="article">
+<meta property="og:title" content="典型相关分析">
+<meta property="og:url" content="https://caryang.github.io/2017/03/01/典型相关分析/index.html">
 <meta property="og:site_name" content="BackStroke">
+<meta property="og:description" content="#问题由来
+典型相关分析，又称之为典型关联分析，英文叫做Canonical Correlation Analysis（CCA）。
+假设有两組变量时，一组为p个变量，另一组为q个变量，欲研究这两组变量之间的相关性。
+1 若这两组分别只有一个变量时，则其相关称为简单(线性)相关(又称做皮尔森相关，Pearson Correlation)。
+2  若其中一组只有一个变量，另一组有很多变量，则此两组的相关">
+<meta property="og:updated_time" content="2017-03-01T14:32:05.535Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BackStroke">
+<meta name="twitter:title" content="典型相关分析">
+<meta name="twitter:description" content="#问题由来
+典型相关分析，又称之为典型关联分析，英文叫做Canonical Correlation Analysis（CCA）。
+假设有两組变量时，一组为p个变量，另一组为q个变量，欲研究这两组变量之间的相关性。
+1 若这两组分别只有一个变量时，则其相关称为简单(线性)相关(又称做皮尔森相关，Pearson Correlation)。
+2  若其中一组只有一个变量，另一组有很多变量，则此两组的相关">
 
 
   <link rel="alternative" href="/atom.xml" title="BackStroke" type="application/atom+xml">
@@ -143,57 +159,70 @@
       
         <div style="max-width: 1000px">
       
-          
-
+          <article id="post-典型相关分析" class="article article-type-post">
+  
+    <h1 class="article-header">
+      典型相关分析
+    </h1>
   
   
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <h1><a href="/archives/2017" class="archive-year">2017</a></h1>
-        </div>
-        <div class="post-list">
-    
-  
 
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2017/02/23/hello-world/" >
-  Hello World
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2017/02/23/hello-world/"><span class="article-date">
-  2017-02-23
+  <div class="article-info">
+    <span class="article-date">
+  2017-03-01
 </span>
-</a>
-        
 
-        
+    
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/机器学习基础/">机器学习基础</a></li></ul>
+	</span>
 
-      </div>
-      <div class="article-entry">
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
-        
-      </div>
-    </div>
+    
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多标签分类/">多标签分类</a></li></ul>
+	</span>
 
-  
+
+  </div>
+  <div class="article-entry">
+    <p>#问题由来</p>
+<p>典型相关分析，又称之为典型关联分析，英文叫做Canonical Correlation Analysis（CCA）。</p>
+<p>假设有两組变量时，一组为p个变量，另一组为q个变量，欲研究这两组变量之间的相关性。</p>
+<p>1 若这两组分别只有一个变量时，则其相关称为简单(线性)相关(又称做皮尔森相关，Pearson Correlation)。</p>
+<p>2  若其中一组只有一个变量，另一组有很多变量，则此两组的相关称为复相关(multiple Correlation)， 可以利用复回归分析来计算这个系数。</p>
+<p>3  如果这两组变量都是一个变量以上的，那量测这两组变量间的相关称为典型相关(Canonical Correlation)例如:</p>
+<ul>
+<li><p>教育研究者想了解 3 个学术能力指标与 5 个在校成绩表现之间的相关性。</p>
+</li>
+<li><p>社会学家想研究2个先前访问而得的个人社会地位指标与后继测量的4个不同社会地位指标之前的关系。</p>
+</li>
+</ul>
+<p>上述这两种情形，研究者所感兴趣的都是两组变数之间的关系。</p>
+
+  </div>
+  <footer class="article-footer">
+    
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" title="署名-相同方式共享">
+      <img src="/images/cc/cc.png">
+      
+          <img src="/images/cc/by.png">
+        
+          <img src="/images/cc/sa.png">
+      
+      <span>
+        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
+      </span>
+    </a>
+  </div>
+
+
+    
+
+  </footer>
+</article>
+
 
 
 
