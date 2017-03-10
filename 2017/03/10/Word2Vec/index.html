@@ -8,16 +8,29 @@
 
 <title>
   
-    Category: 数学基础
+    Word2Vec
   
 </title>
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="BackStroke">
-<meta property="og:url" content="https://caryang.github.io/categories/数学基础/index.html">
+<meta name="description" content="介绍2013年末，Google发布的word2vec工具引起了一帮人的热捧，大家几乎都认为它是深度学习
+在自然语言领域的一项了不起的应用，各种欢呼“深度学习在自然语言领域开始发力了”。
+互联网界很多公司也开始跟进，使用word2vec产出了不少成果。
+原理在文本挖掘上的应用采用 Google 的 Word2Vec 工具，从海量的文本（本文）中，使用神经网络学习得到词典中每个词的向量表示(即词向量)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Word2Vec">
+<meta property="og:url" content="https://caryang.github.io/2017/03/10/Word2Vec/index.html">
 <meta property="og:site_name" content="BackStroke">
+<meta property="og:description" content="介绍2013年末，Google发布的word2vec工具引起了一帮人的热捧，大家几乎都认为它是深度学习
+在自然语言领域的一项了不起的应用，各种欢呼“深度学习在自然语言领域开始发力了”。
+互联网界很多公司也开始跟进，使用word2vec产出了不少成果。
+原理在文本挖掘上的应用采用 Google 的 Word2Vec 工具，从海量的文本（本文）中，使用神经网络学习得到词典中每个词的向量表示(即词向量)">
+<meta property="og:updated_time" content="2017-03-10T07:21:28.027Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BackStroke">
+<meta name="twitter:title" content="Word2Vec">
+<meta name="twitter:description" content="介绍2013年末，Google发布的word2vec工具引起了一帮人的热捧，大家几乎都认为它是深度学习
+在自然语言领域的一项了不起的应用，各种欢呼“深度学习在自然语言领域开始发力了”。
+互联网界很多公司也开始跟进，使用word2vec产出了不少成果。
+原理在文本挖掘上的应用采用 Google 的 Word2Vec 工具，从海量的文本（本文）中，使用神经网络学习得到词典中每个词的向量表示(即词向量)">
 
 
   <link rel="alternative" href="/atom.xml" title="BackStroke" type="application/atom+xml">
@@ -143,76 +156,60 @@
       
         <div style="max-width: 1000px">
       
-          <h1>数学基础</h1>
-
-
+          <article id="post-Word2Vec" class="article article-type-post">
+  
+    <h1 class="article-header">
+      Word2Vec
+    </h1>
   
   
-    <div class="post-list">
-  
 
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2017/03/01/皮尔逊相关系数/" >
-  皮尔逊相关系数
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2017/03/01/皮尔逊相关系数/"><span class="article-date">
-  2017-03-01
+  <div class="article-info">
+    <span class="article-date">
+  2017-03-10
 </span>
-</a>
-        
+
+    
 	<span class="article-category tagcloud">
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/数学基础/">数学基础</a></li></ul>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/深度学习/">深度学习</a></li></ul>
 	</span>
 
 
+    
+
+  </div>
+  <div class="article-entry">
+    <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>2013年末，Google发布的word2vec工具引起了一帮人的热捧，大家几乎都认为它是深度学习</p>
+<p>在自然语言领域的一项了不起的应用，各种欢呼“深度学习在自然语言领域开始发力了”。</p>
+<p>互联网界很多公司也开始跟进，使用word2vec产出了不少成果。</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><h2 id="在文本挖掘上的应用"><a href="#在文本挖掘上的应用" class="headerlink" title="在文本挖掘上的应用"></a>在文本挖掘上的应用</h2><p>采用 Google 的 Word2Vec 工具，从海量的文本（本文）中，使用神经网络学习得到词典中每个词的向量表示(即词向量)。</p>
+<p>然后根据向量，对词典中的每个词进行聚类，例如聚类成 500 类（新的“词典”）。</p>
+<p>而后，使用工具对每个文档提取代表性的关键词。每个关键词都在前面的聚类中找到自己的类别。</p>
+<p>这样类似向量空间模型（VSM），每个文档都可以用过关键词词频表示成一个 500 维的向量，这个向量就是这个文档的“特征向量”。</p>
+
+  </div>
+  <footer class="article-footer">
+    
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" title="Attribution-ShareAlike">
+      <img src="/images/cc/cc.png">
+      
+          <img src="/images/cc/by.png">
         
+          <img src="/images/cc/sa.png">
+      
+      <span>
+        This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+      </span>
+    </a>
+  </div>
 
-      </div>
-      <div class="article-entry">
-        
-          <p>要理解Pearson相关系数，首先要理解协方差（Covariance）。</p>
-<h2 id="协方差"><a href="#协方差" class="headerlink" title="协方差"></a>协方差</h2><font color="#A60000">协方差是一个反映两个随机变量相关程度的指标，</font>
 
-<p>如果一个变量跟随着另一个变量同时变大或者变小，那么这两个变量的协方差就是正值，反之相反，公式如下：</p>
-<p><img src="http://olvdy91ke.bkt.clouddn.com/image/formula/Covariance.png" alt="协方差公式">  </p>
-<p>另外一种计算协方差的公式就是利用随便变量X和Y的期望，即：</p>
-<p><img src="http://olvdy91ke.bkt.clouddn.com/image/formula/Covariance2.jpg" alt="协方差公式">  </p>
-<p>从直观上来看，协方差表示的是两个变量总体误差的期望。</p>
-<p>如果两个变量的变化趋势一致，也就是说如果其中一个大于自身的期望值时另外一个也大于自身的期望值，那么两个变量之间的协方差就是正值；</p>
-<p>如果两个变量的变化趋势相反，即其中一个变量大于自身的期望值时另外一个却小于自身的期望值，那么两个变量之间的协方差就是负值。</p>
-<p>如果X与Y是统计独立的，那么二者之间的协方差就是0，因为两个独立的随机变量满足E[XY]=E[X]E[Y]。</p>
-<p>但是，反过来并不成立。即如果X与Y的协方差为0，二者并不一定是统计独立的。</p>
-<p>协方差为0的两个随机变量称为是不相关的。</p>
-<h2 id="皮尔逊相关系数"><a href="#皮尔逊相关系数" class="headerlink" title="皮尔逊相关系数"></a>皮尔逊相关系数</h2><p>下面回归正题，<font color="#A60000">皮尔森相关系数，也叫做简单相关系数。是用来反映两个变量线性相关程度的统计量，</font> 公式如下：</p>
-<p><img src="http://olvdy91ke.bkt.clouddn.com/image/formula/Pearson%20correlation%20coefficient.png" alt="皮尔逊相关系数公式"> </p>
-<p>虽然协方差能反映两个随机变量的相关程度（协方差大于0的时候表示两者正相关，小于0的时候表示两者负相关），</p>
-<p>但是协方差值的大小并不能很好地度量两个随机变量的关联程度。为此引入皮尔逊相关系数，一般用r表示，r的取值在-1与+1之间，</p>
-<p>若r&gt;0，表明两个变量是正相关，即一个变量的值越大，另一个变量的值也会越大；</p>
-<p>若r&lt;0，表明两个变量是负相关，即一个变量的值越大另一个变量的值反而会越小。</p>
-<p>r的绝对值越大表明相关性越强，要注意的是这里并不存在因果关系。若r=0，表明两个变量间不是线性相关，但有可能是其他方式的相关（比如曲线方式）.</p>
-<p>下面来看皮尔逊系数的另外一种计算公式：</p>
-<p><img src="http://olvdy91ke.bkt.clouddn.com/image/formula/Pearson%20correlation%20coefficient2.png" alt="皮尔逊相关系数公式">   </p>
-<p>可以看做将两组数据首先做Z分数处理之后, 然后两组数据的乘积和除以样本数</p>
-<p>Z分数一般代表正态分布中, 数据偏离中心点的距离.等于变量减掉平均数再除以标准差.</p>
-<p>标准差则等于变量减掉平均数的平方和,再除以样本数,最后再开方.</p>
-<h2 id="皮尔逊相关的约束条件"><a href="#皮尔逊相关的约束条件" class="headerlink" title="皮尔逊相关的约束条件"></a>皮尔逊相关的约束条件</h2><p>1 两个变量间有线性关系</p>
-<p>2 变量是连续变量</p>
-<p>3 变量均符合正态分布,且二元分布也符合正态分布</p>
-<p>4 两变量独立</p>
+    
 
-        
-      </div>
-    </div>
+  </footer>
+</article>
 
-  
-    </div>
-  
 
 
 
